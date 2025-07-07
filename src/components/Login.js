@@ -7,13 +7,12 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase.js";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice.js";
+import { Test, PHOTO_URL } from "../utils/constants.js";
 
 const Login = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   const [isSignUp, setIsSignUp] = useState(false);
   const [errMsg, setErrMsg] = useState("");
@@ -70,7 +69,6 @@ const Login = () => {
     )
       .then((userCredential) => {
         const user = userCredential.user;
-        navigate("/browse");
       })
       .catch((error) => {
         setErrMsg(error.code + " - " + error.message);
@@ -80,8 +78,7 @@ const Login = () => {
   const updateUserProfile = (user) => {
     updateProfile(user, {
       displayName: name.current.value,
-      photoURL:
-        "https://media.licdn.com/dms/image/v2/C5603AQEAkqDfHdqi1w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1599803148536?e=1757548800&v=beta&t=K7i7oTOgfBkjwYpWY4Pnsj4C6MrBvOMt1GmInizvoTE",
+      photoURL: PHOTO_URL,
     })
       .then(() => {
         const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -93,7 +90,6 @@ const Login = () => {
             photoUrl: photoURL,
           })
         );
-        navigate("/browse");
       })
       .catch((error) => {
         setErrMsg(error.message);
@@ -104,10 +100,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img
-          alt="backLogo"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/75b0ed49-75ab-4a63-bd45-37bc2c95cb73/web/IN-en-20250623-TRIFECTA-perspective_ae5833b7-6ce5-4e88-853e-014f38c506f1_large.jpg"
-        />
+        <img alt="backLogo" src={Test} />
       </div>
       <form
         className="absolute w-3/12 my-36 mx-auto left-0 right-0 p-4 bg-black opacity-80"

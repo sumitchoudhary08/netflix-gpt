@@ -13,6 +13,13 @@
 - Create SignUp User Account
 - Implement Sign User api
 - Created Redux Store with userSlice
+- Implement Signout
+- Update Profile
+- Bug Fix: Update profile
+- Bug Fix: Auth redirection
+- Unsubscribe to the oAuthStateChanged callback
+- Add hardoced values to the constant files
+- Fetch from TMDB movies
 
 # Features
 
