@@ -4,7 +4,6 @@ export const validateSignIn = (
   name = null,
   checkName = false
 ) => {
-  console.log(password);
   const emailRegex = /^[^s@]+@[^s@]+.[^s@]+$/;
   const pswdrRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
   const nameRegex = /^[A-Za-z\s]+$/;
