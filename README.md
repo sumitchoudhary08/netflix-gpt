@@ -19,7 +19,16 @@
 - Bug Fix: Auth redirection
 - Unsubscribe to the oAuthStateChanged callback
 - Add hardoced values to the constant files
-- Fetch from TMDB movies
+- Registe in TMDB, create project and get access token
+- Get now playing movies list from TMDB api
+- Custom hook for now playing movies
+- Create movie slice
+- Update store with movie date
+- Planning for main container & secondary container
+- Fetch data for trailer video
+- Update store with trailer video data
+- Embedded the youtube video and make it auto play and mute
+- Taliwind class to make main conatiner look good
 
 # Features
 
