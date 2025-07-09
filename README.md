@@ -29,6 +29,7 @@
 - Update store with trailer video data
 - Embedded the youtube video and make it auto play and mute
 - Taliwind class to make main conatiner look good
+- Build Seconday container
 
 # Features
 
