@@ -9,7 +9,7 @@ import {
 import { auth } from "../utils/firebase.js";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice.js";
-import { Test, PHOTO_URL } from "../utils/constants.js";
+import { BACK_LOGO, PHOTO_URL } from "../utils/constants.js";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -100,7 +100,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img alt="backLogo" src={Test} />
+        <img alt="backLogo" src={BACK_LOGO} />
       </div>
       <form
         className="absolute w-3/12 my-36 mx-auto left-0 right-0 p-4 bg-black opacity-80"

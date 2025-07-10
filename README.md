@@ -30,6 +30,14 @@
 - Embedded the youtube video and make it auto play and mute
 - Taliwind class to make main conatiner look good
 - Build Seconday container
+- Build the movie list
+- Build the movie card
+- TMDB Image CDN Url
+- Made the browse page amazing with talwind css
+- Use Popular movie custom hoook
+- GPT search page
+- GPT search bar
+- Multilanguage feature in our app
 
 # Features
 
