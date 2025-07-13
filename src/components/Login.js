@@ -97,13 +97,17 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="">
       <Header />
       <div className="absolute">
-        <img alt="backLogo" src={BACK_LOGO} />
+        <img
+          className="h-screen w-screen object-cover"
+          alt="backLogo"
+          src={BACK_LOGO}
+        />
       </div>
       <form
-        className="absolute w-3/12 my-36 mx-auto left-0 right-0 p-4 bg-black opacity-80"
+        className="absolute w-full md:w-3/12 my-36 mx-auto left-0 right-0 p-4 bg-black opacity-80"
         onSubmit={(e) => {
           e.preventDefault();
         }}
